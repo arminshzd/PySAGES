@@ -126,7 +126,6 @@ def get_neighbor_ids(box_size: jax.Array, cutoff: float, cell_idx: jax.Array, id
         for cidx in neighbor_cell_ids:
             neighbor_ids.append(np.where(cell_idx == cidx, fill_value=-1, size=buffer_size_cell)[0])
 
-            
         # concatenate the neighbor ids into a single array.
         neighbor_ids = np.concatenate(neighbor_ids, axis=-1)
         return neighbor_ids

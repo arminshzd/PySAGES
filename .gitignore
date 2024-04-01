@@ -12,3 +12,4 @@ examples/**/*.txt
 examples/**/.ipynb_checkpoints/
 pysages/_version.py
 pysages.egg-info/
+.DS_Store
